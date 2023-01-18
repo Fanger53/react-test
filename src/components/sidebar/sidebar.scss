@@ -1,0 +1,29 @@
+@import '../../styles/colors';
+@import '../../styles/fonts';
+
+.aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: $body-color;
+    border-right: 2px solid rgba(0, 0, 0, 0.05);
+    padding: 0.5rem;
+    width: 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.nav__link {
+     font-size: 1.5rem;
+     color: $title-color;
+     font-weight: $font-bold;
+}

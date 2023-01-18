@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+@import './styles/colors';
+@import './styles/fonts';
+// Variables scss
+
+
+$shadow: 0 5px 20px 0 rgb(69 67 96 / 10%);
+$border-radius:20px;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+textarea {
+  font-family: $body-font;
+  font-size: $normal-font-size;
+}
+
+body {
+  background-color: $body-color;
+  line-height: 1.7;
+  color: $text-color;
+}
+
+h1,h2,h3 {
+  color: $title-color;
+  font-weight: $font-semi-bold;
+  line-height: 1.2;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1080px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+}
+
+.section {
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+}
+
+.section__title {
+  font-size: $h1-font-size;
+  margin-left: 0.875rem;
+  font-weight: $font-bold;
+  position: relative;
+  margin-bottom: 3.75rem;
+}
+
+.section__title::before {
+  content: '';
+  background: url(./assets/dots-bg.svg);
+  height: 2.25rem;
+  width: 2.25rem;
+  position: absolute;
+  left: -0.875rem;
+  top: -0.875rem
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  line-height: 1;
+  border-radius: 1.875rem;
+  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+  border: 1px solid transparent;
+  color: #fff;
+  display: inline-block;
+  background-color: $first-color;
+  font-weight: $font-bold;
+}
+
+@keyframes button-push {
+  50% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn:hover {
+  animation: button-push 0.3s linear 1;
+}
+
+.border {
+  border: 2px solid rgb(26, 24, 24);
+}
